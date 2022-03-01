@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>#my_start_instructions</title>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* .block{
+			display: flex;
+		}
+		.block__img{
+			width: 165px;
+			height: 165px;
+		}
+		.block__img img{
+			width: 100%;
+			height: 100%;
+			object-fit:cover;
+			object-position:center;
+		} */
+  </style>
+</head>
+
+<body>
+  <div class="slider">
+    <div class="block slider__track">
+      <div class="block__img">
+        <img src="img/apes-slider/1.webp" alt="">
+      </div>
+      <div class="block__img">
+        <img src="img/apes-slider/2.webp" alt="">
+      </div>
+      <div class="block__img">
+        <img src="img/apes-slider/3.webp" alt="">
+      </div>
+      <div class="block__img">
+        <img src="img/apes-slider/4.webp" alt="">
+      </div>
+      <div class="block__img">
+        <img src="img/apes-slider/5.webp" alt="">
+      </div>
+      <div class="block__img">
+        <img src="img/apes-slider/6.webp" alt="">
+      </div>
+      <div class="block__img">
+        <img src="img/apes-slider/7.webp" alt="">
+      </div>
+      <div class="block__img">
+        <img src="img/apes-slider/8.webp" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let slideLength = document.querySelectorAll('.block__img');
+    let track = document.querySelector('.slider__track');
+    track.innerHTML = "";
+    for (let i = 0; i < 3; i++) {
+      for (let j = 0; j < slideLength.length; j++) {
+        track.innerHTML += `
+        <div class="block__img">
+        <img src="img/apes-slider/${j + 1}.webp" alt="">
+      </div>
+        `
+      }
+    }
+  </script>
+</body>
+
+</html>
